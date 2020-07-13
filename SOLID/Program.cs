@@ -6,7 +6,7 @@ namespace SOLID
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // Not using this...
         }
     }
 }
