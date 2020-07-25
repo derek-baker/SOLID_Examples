@@ -2,7 +2,8 @@
 {
     /// <summary>
     /// This interface contains methods pertaining to both relational and non-relational interfaces.
-    /// Many consumers of this interface will not often use both types of DB at the same time.
+    /// It's possible that a significant portion of consumers of this interface 
+    /// will not often use both types of database at the same time.
     /// </summary>    
     public interface IDatabase
     {

@@ -14,7 +14,8 @@ namespace SOLID._3_LiskovSubstitution
     public class StorageBucket : IStorageBucket 
     {
         public List<IStorageObject> GetContents() {
-            // StorageObject, being a subclass of IStorageObject is able to "stand in" for IStorageObject.
+            // Since StorageObject implements IStorageObject, 
+            // StorageObject is able to "stand in" for IStorageObject.
             return new List<IStorageObject>() { new StorageObject() }; 
         }
     }
@@ -28,13 +29,13 @@ namespace SOLID._3_LiskovSubstitution
 
         public void DeleteBucket(IStorageBucket bucket)
         {
-            // Delete bucket here            
+            // Pretend that the needed code is here.            
         }
 
         private void showSubstitution(StorageBucket bucket)
         {
-            // We're able to substitue a StorageBucket in place 
-            // of an IStorageBucket in parameter passed to the DeleteBucket invocation.
+            // We're able to substitue a StorageBucket in place of an IStorageBucket 
+            // for the parameter passed to the DeleteBucket invocation.
             DeleteBucket(bucket);
         }
     }

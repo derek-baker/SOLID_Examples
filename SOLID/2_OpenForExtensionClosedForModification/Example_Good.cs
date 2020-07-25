@@ -1,5 +1,5 @@
 ﻿/// <summary>
-/// In the classes below, we see the concept of standard prices and prime prices.
+/// In the code below, we see classes that can compute different types of prices.
 /// If we were to need another type of price, we could create a new class that extends the interface,
 /// rather than modifying existing code.
 /// </summary>

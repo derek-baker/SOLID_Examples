@@ -9,8 +9,9 @@
     internal interface IReportGenerator { }
 
     /// <summary>
+    /// (This isn't a very good example)
     /// This class could require modification due to changes in  
-    /// how data is acquired, or by changes in how the report is generated.
+    /// how data is acquired, or by changes in how the report engine works.
     /// </summary>
     internal class ReportGenerator : IReportGenerator 
     {

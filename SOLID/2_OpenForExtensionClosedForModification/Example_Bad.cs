@@ -15,8 +15,7 @@
                 actualPrice = standardPrice * 0.8;
                 return actualPrice;
             }
-            actualPrice = standardPrice;
-            return actualPrice;
+            return standardPrice;            
         }
     }
 }
